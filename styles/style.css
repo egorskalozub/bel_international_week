@@ -1,0 +1,120 @@
+/*DEFAULT CSS*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    background-color: black;
+}
+main,nav{
+    max-width: 960px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 31.5px;
+
+}
+h3{
+    font-size: 24.5px;
+
+}
+h1,h2,h3{
+    line-height: 40px;
+}
+img {
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+/* SANDWICH-MENU */
+
+.sandwich-menu {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.icon {
+  margin-left: 60px;
+  margin-top: 10px;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 50%
+}
+
+.icon::before {
+  transform: translateY(-7px);
+}
+
+.icon::after {
+  transform: translateY(7px);
+}
+
+
+ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0;
+  display: none;
+}
+
+li {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+.sandwich-menu:hover ul {
+  display: block;
+}
+
+/* MAIN CONTAINER */
+#main{
+    margin-top: 200px;
+}
+.main-container {
+    text-align: center;
+    padding: 50px;
+    margin: 20px auto;
+    width: 80%;
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+.main-container > p {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+}
