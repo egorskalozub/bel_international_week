@@ -3,57 +3,64 @@
   <head>
     <title>Phone controlled car</title>
     <!--Additional meta-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--Responsivity-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Linked CSS files-->
     <link rel="stylesheet" href="styles/controller_style.css" />
     <link rel="stylesheet" href="styles/responsivity.css" />
     <!--Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Icons-->
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
   </head>
-  
+
   <body>
     <header>
-        <div class="sandwich-menu">
-            <div class="icon"></div>
-            <ul>
-                <li><a href="index.html">Main</a></li>
-              <li><a href="controller.html">Controller</a></li>
-            </ul>
-          </div>
+      <div class="sandwich-menu">
+        <div class="icon"></div>
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="controller.html">Controller</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-      <button id="connect" type="button">Connect</button>
-      <button id="disconnect" type="button">Disconnect</button>
-      <button id="accelPermsButton" onclick="getAccel()">Get Accelerometer Permissions</button>
-    
+      <div class="but_list">
+        <button id="connect" type="button">Connect</button>
+        <button id="disconnect" type="button">Disconnect</button>
+        <button id="accelPermsButton" onclick="getAccel()">
+          Get Accelerometer Permissions
+        </button>
+      </div>
+
       <div id="terminal">
         <div>
-          If on iOS : use Bluefy<br>
+          If on iOS : use Bluefy<br />
           If on Android : use Google Chrome
         </div>
         <div>Device connection...</div>
         <div class="out">Outcoming message</div>
         <div class="in">Incoming message</div>
       </div>
-    
+
       <form id="send-form">
-        <input id="input" type="text">
+        <input id="input" type="text" />
         <button type="submit">Send</button>
       </form>
-    
-      <div id="logo">	<span class="speedometer"></span>
+
+      <div id="logo">
+        <span class="speedometer"></span>
         <span class="needle"></span>
       </div>
-    
+
       <script src="js/controller.js"></script>
-  </main>
+    </main>
   </body>
 </html>
-
